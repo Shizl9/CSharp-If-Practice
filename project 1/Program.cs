@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //*******Task1**********
+using System.Transactions;
+
 Console.WriteLine("please Enter numper:");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num > 0)
@@ -21,6 +23,30 @@ else
 { Console.WriteLine("number is Odd"); }
 
 //*******Task3*********
+Console.WriteLine("Enter Student Socre from 0-100:");
+int score = Convert.ToInt32(Console.ReadLine());
+if(score >=90 && score<=100)
+{
+    Console.WriteLine("Excellent");
+}
+else if (score >=75)
+{
+    Console.WriteLine("Very good");
+}
+else if ( score >=60)
+{
+    Console.WriteLine("Good");
+}
+else if(score>=50)
+{
+    Console.WriteLine("Pass");
+}
+else
+{
+    Console.WriteLine("Fail");
+}
+//***************Task4**************
+
 
 
 
